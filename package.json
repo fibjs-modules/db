@@ -1,0 +1,44 @@
+{
+  "name": "@fibjs/db",
+  "version": "0.0.1",
+  "types": "@types/index.d.ts",
+  "description": "driver & db connection manager of fibjs",
+  "main": "lib",
+  "scripts": {
+    "build": "fib-typify src -o lib",
+    "test": "fibjs test",
+    "ci": "npm run build && npm run test",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibjs-modules/db.git"
+  },
+  "author": "Richard <richardo2016@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibjs-modules/db/issues"
+  },
+  "ci": {
+    "type": "travis, appveyor",
+    "version": [
+      "0.21.0",
+      "0.22.0",
+      "0.23.0",
+      "0.24.0",
+      "0.25.0",
+      "0.26.0",
+      "0.26.1"
+    ]
+  },
+  "homepage": "https://github.com/fibjs-modules/db#readme",
+  "devDependencies": {
+    "@fibjs/ci": "^2.1.0",
+    "@types/fibjs": "^0.26.5",
+    "fib-typify": "^0.5.2",
+    "knex": "^0.16.3"
+  },
+  "dependencies": {
+    "uuid": "^3.3.2"
+  }
+}
